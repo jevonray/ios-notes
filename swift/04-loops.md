@@ -4,7 +4,7 @@
 
 We can use `for` loops to loop over ranges and arrays.
 
-```
+```swift
 let nums = 1..10
 
 for i in nums {
@@ -12,7 +12,7 @@ for i in nums {
 }
 ```
 
-```
+``` swift
 let nums = [1, 2, 3, 4, 5]
 
 for i in nums {
@@ -22,7 +22,7 @@ for i in nums {
 
 Swift can use `_` in loops if we don't need to use the value.
 
-```
+``` swift
 for _ in 1...5 {
     print("This will print 5 times")
 }
@@ -32,7 +32,7 @@ for _ in 1...5 {
 
 Similar to for loops, `while` loops are given a condition and loop until the condition is false.
 
-```
+``` swift
 var num = 1
 
 while num <= 20 {
@@ -45,7 +45,7 @@ while num <= 20 {
 
 Similar to while loops, `repeat` loops check the condition at the end whereas while loops check at the start.
 
-```
+``` swift
 var num = 1
 
 repeat {
@@ -58,7 +58,7 @@ repeat {
 
 You can exit a loop using the keyword `break`.
 
-```
+``` swift
 var num = 1
 
 while num <= 20 {
@@ -74,7 +74,7 @@ while num <= 20 {
 
 If you need to break out of a nested loop we can give the outer loop a label then call the `break` keyword with that label.
 
-```
+``` swift
 outerLoop: for i in 1...10 {
     for j in 1...10 {
         let product = i * j
@@ -92,7 +92,7 @@ outerLoop: for i in 1...10 {
 
 To skip items in a loop we can use the `continue` keyword.
 
-```
+``` swift
 for i in 1...10 {
     if i % 2 == 0 {
         continue
@@ -105,7 +105,7 @@ for i in 1...10 {
 
 You can use while loops to create infinite loops. It is important to still have a way for you exit the loop.
 
-```
+``` swift
 var counter = 0
 
 while true {

@@ -4,13 +4,13 @@
 
 Declaring a variable.
 
-```
+``` swift
 var str = "Hello World!"
 ```
 
 Values of variables can be changed.
 
-```
+``` swift
 str = "Goodbye!"
 ```
 
@@ -18,7 +18,7 @@ str = "Goodbye!"
 
 Declaring a string.
 
-```
+``` swift
 var str = "Hello World" 
 ```
 
@@ -26,13 +26,13 @@ var str = "Hello World"
 
 Declaring an integer.
 
-```
+``` swift
 var age = 38 
 ```
 
 You can use underscores as separators.
 
-```
+``` swift
 var population = 8_000_000 
 ```
 
@@ -41,15 +41,15 @@ var population = 8_000_000
 Use three doublue quotes marks (""") to declar a multi-line string.
 Opening and closing quotes must be on their own lines
 
-```
+``` swift
 var str = """
 This is a
 multi-line
 string.
 """
-```
+``` 
 Output:
-```
+``` swift
 This is a 
 multi-line 
 string.
@@ -57,7 +57,7 @@ string.
 
  To format a multi-line string without line breaks use backslash ( \\ ).
 
- ```
+ ``` swift
 var str = """
 This is a \
 multi-line \
@@ -65,7 +65,7 @@ string.
 """
 ```
 Output:
-```
+``` swift
 This is a multi-line string.
  ```
 
@@ -75,7 +75,7 @@ Doubles can hold fractional values or decimals
 
 Declaring a double.
 
-```
+``` swift
 var pi = 3.14
 ```
 
@@ -84,7 +84,7 @@ Booleans are true or false.
 
 Declaring a boolean.
 
-```
+``` swift
 var isCool = true
 ```
 
@@ -92,7 +92,7 @@ var isCool = true
 
 Swift can place variables inside strings.
 
-```
+``` swift
 var score = 85
 var scoreStr = "Your score is \(score)"
 ```
@@ -101,7 +101,7 @@ var scoreStr = "Your score is \(score)"
 
 Declaring a constant.
 
-```
+``` swift
 let greeting = "Hello"
 ```
 
@@ -112,7 +112,7 @@ We use `let` for constants and `var` for variables.
 
 You can explicity assign a type rather than rely on Swift's type inference.
 
-```
+``` swift
 let greeting: String = "Hello!"
 let age: Int = 38
 let pi: Double = 3.14

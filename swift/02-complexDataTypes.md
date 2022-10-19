@@ -3,7 +3,7 @@
 ## Arrays
 
 Declaring an array.
-```
+``` swift
 let apple = "apple"
 let orange = "orange"
 let banana = "banana"
@@ -12,12 +12,12 @@ let fruit = [apple, orange, banana]
 ```
 
 Accessing an array (0 indexed).
-```
+``` swift
 fruits[1] // orange
 ```
 
 Array type annotations.
-```
+``` swift
 let strArr: [String] = ["1", "2", "3", "4"]
 let intArr: [Int] = [1, 2, 3, 4]
 let doubleArr: [Double] = [1.0, 2.0, 3.0, 4.0]
@@ -31,7 +31,7 @@ Sets are collections of values similar to arrays except they:
 2. Each element must be unique.
 
 Declaring a set.
-```
+``` swift
 let colors = Set(["red", "green", "blue"])
 ```
 
@@ -43,12 +43,12 @@ Tuples can store several values into a sing value.
 3. You can access items in tuple using numerical position or the name.
 
 Declaring a tuple.
-```
+``` swift
 var name = (first: "Jane", last: "Doe")
 ```
 
 Accessing a tuple.
-```
+``` swift
 name.0 // numerical position
 name.first // name
 ```
@@ -64,7 +64,7 @@ name.first // name
 Dictionaries store values paired with a key.
 
 Declaring a dictionary.
-```
+``` swift
 let heights = [
     "John": 1.73,
     "Jane": 1.54,
@@ -73,7 +73,7 @@ let heights = [
 ```
 
 Accessing a dictionary.
-```
+``` swift
 heights["Jane"] // output: 1.54
 ```
 
@@ -81,7 +81,7 @@ Dictionary type annotations.
 
 First type is key type.
 Second type is value type.
-```
+``` swift
 let heightDict: [String: Double]
 ```
 
@@ -91,7 +91,7 @@ When trying to access a dictionary with a key that doesn't exist **nil** will be
 
 To fix this we can add a default value if the key doesn't exist.
 
-```
+``` swift
 heights["James", default: 1.5]
 ```
 
@@ -100,7 +100,7 @@ heights["James", default: 1.5]
 Arrays, sets, and dictionaries are known as collections.
 
 Creating an empty collection.
-```
+``` swift
 // Array
 var fruit = [String]()
 var fruit = Array<String>()
@@ -118,7 +118,7 @@ var heights = Dictionary<String, Double>()
 Enumeration (enums) is a way of defining groups of related values.
 
 Defining an enum.
-```
+``` swift
 enum Results {
     case success
     case failure
@@ -127,14 +127,14 @@ enum Results {
 
 Using an enum.
 
-```
+``` swift
 let outcome = Results.success
 ```
 
 ## Enum Associated Values
 
 Enum associated values allow us to add additional details to values.
-```
+``` swift
 enum Activity {
     case bored
     case running(destination: String)
@@ -143,14 +143,14 @@ enum Activity {
 }
 ```
 
-```
+``` swift
 let talking = Activity.talking(topic: "football")
 ```
 
 ## Enum Raw Values
 
 Declaring enum that stores integer values.
-```
+``` swift
 enum Planet: Int {
     case mercury
     case venus
@@ -161,12 +161,12 @@ enum Planet: Int {
 Swift will assign the enum values starting with 0.
 
 Now we can assign a variable called earth to raw value 2.
-```
+``` swift
 let earth = Planet(rawValue: 2)
 ```
 
 We can also assign a case a specific value and Swift will assign the rest starting with that number and counting up.
-```
+``` swift
 enum Planet: Int {
     case mercury = 1
     case venus
