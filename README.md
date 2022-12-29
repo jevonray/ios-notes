@@ -1,3 +1,3 @@
-# iOS Notes
+# Systems Programming Notes
 
-Notes on iOS development, internals, and security.  
+Notes on systems programming, operating systems, and computer architecture.
